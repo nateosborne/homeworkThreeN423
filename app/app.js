@@ -59,9 +59,9 @@ function getAllUsers() {
 
   $.each(allUsers, (idx, user) => {
     userString += `<p>`;
-    userString += `Name: ${user.fName} ${user.lName} Age: ${user.age} Phone: ${user.phone} Classes: `;
+    userString += `<strong>Name:</strong> ${user.fName} ${user.lName}<br> <strong>Age:</strong> ${user.age}<br> <strong>Phone:</strong> ${user.phone} <br><strong>Classes:</strong> `;
     $.each(user.classes, (idx, cls) => {
-      userString += `<span>${cls.className}</span>`;
+      userString += `<span> ${cls.className}</span>`;
     });
     userString += `</p>`;
   });
