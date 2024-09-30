@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Add Student Example</h1>
+      <div class="form">
+        <label for="fname">First Name</label>
+        <input
+          class="textInputs"
+          type="text"
+          id="firstName"
+          placeholder="First Name..."
+        />
+        <label for="lName">Last Name</label>
+        <input
+          class="textInputs"
+          type="text"
+          id="lastName"
+          placeholder="Last Name..."
+        />
+        <label for="classes">Age</label>
+        <input class="textInputs" type="text" id="age" placeholder="Age..." />
+        <label for="classes">Phone</label>
+        <input
+          class="textInputs"
+          type="text"
+          id="phone"
+          placeholder="Phone Number..."
+        />
+        <label for="classes">Add Classes</label>
+        <input
+          class="textInputs"
+          type="text"
+          id="classes"
+          placeholder="Add your classes separated by comma."
+        />
+
+        <input type="submit" id="submit" value="Add Name & Classes" />
+      </div>
+    </div>
+    <div class="users">
+      <span id="getUsers">Get All Users</span>
+      <div id="userList"></div>
+    </div>
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
